@@ -3,9 +3,11 @@ echo "-----> Installing GhostScript 9.20"
 # change to the the BUILD_DIR ($1)
 cd $1
 # download the binary (-O) silently (-s)
-echo "-----> Downloading Binnary"
+echo "-----> Downloading Binary"
 wget --quiet https://raw.githubusercontent.com/dan1d/gs.20.0-binnary/master/ghostscript-9.20.tar.gz -O ghostscript-9.20.tar.gz
 # make a directory to untar (like unzip) the binary
+echo "-----> Creating Directory"
 mkdir -p vendor/ghostscript
 # untar the binary to the directory we want
+echo "-----> Untar binary"
 tar -C vendor/ghostscript -xvf ghostscript-9.20.tar.gz
