@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-cat &lt;&lt;EOF
----
+cat <<EOF
 config_vars:
-PATH: $PATH:/app/vendor/ghostscript/bin
-EOF
+  PATH: $PATH:/app/vendor/gs/bin
+  EOF
